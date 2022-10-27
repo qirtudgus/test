@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# 테스트를 위해 빌드파일도 푸시
+# /build
 
 # misc
 .DS_Store
