@@ -20,9 +20,8 @@ app.post("/api/test", (req, res) => {
   db.query("SELECT * FROM testTable", [], (err, rows) => {
     console.log(rows);
     dbTest = rows;
+    res.status(200).json({ test: "테스트", db: rows });
   });
-
-  res.status(200).json({ test: "테스트", db: dbTest });
 });
 
 app.listen(SERVER_PORT, () => {
